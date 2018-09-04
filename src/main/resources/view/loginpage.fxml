@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="320.0" prefWidth="320.0" spacing="15.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.controllers.LoginPageController">
+   <children>
+      <Label fx:id="messagelbl" text="Please Write Your Username and Password Below:" />
+      <Region prefHeight="25.0" prefWidth="280.0" />
+      <Label text="Username:" />
+      <TextField fx:id="usernametxt" onAction="#checkAndLogin" />
+      <Label text="Password:" />
+      <PasswordField fx:id="passwordpsw" onAction="#checkAndLogin" />
+      <HBox alignment="CENTER" prefWidth="280.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#checkAndLogin" text="Login" />
+         </children>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="5.0" left="20.0" right="20.0" top="5.0" />
+   </padding>
+</VBox>
